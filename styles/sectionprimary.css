@@ -2,11 +2,60 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-& .sp-col {
-  margin-top: 9rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  & header {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+    position: absolute;
+    top: 0;
+    margin-left: 20px;
+    & > :nth-child(1) {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      & ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font: var(--button);
+        & li {
+          padding: 0.75rem 0.5rem;
+        }
+      }
+    }
+    & > :nth-child(2) {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding-inline: 0.5rem;
+      padding-block: 0.75rem;
+    }
+  }
+
+  @media (width < 62.5rem) {
+   & header {
+      padding-block: 1rem;
+      margin-left: 0.5rem;
+      & > :nth-child(1) {
+        & ul {
+          display: none;
+        }
+      }
+      & > :nth-child(2) {
+        display: none;
+      }
+      & img {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  & .sp-col {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
     & > :nth-child(1) p {
       margin-block: 1.5rem;
     }
@@ -14,7 +63,7 @@
       & p {
         margin-block: 1rem;
       }
-      & > div{
+      & > div {
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -23,33 +72,29 @@
   }
 }
 
-
-
 @media (width > 80rem) {
   #section-primary {
     zoom: 125%;
+  }
 }
-
-}
-
 
 @media (width < 62.5rem) {
   #section-primary {
-  flex-direction: column-reverse;
-& .sp-col {
-  margin-top: 4rem;
-  text-align: center;
-  & > :nth-child(1){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  }
-  & .sp-right{
-    & img{
-      padding-left: 3rem;
-      width: 100%;
+    flex-direction: column-reverse;
+    & .sp-col {
+      margin-top: 4rem;
+      text-align: center;
+      & > :nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    & .sp-right {
+      & img {
+        padding-left: 3rem;
+        width: 100%;
+      }
     }
   }
-}
 }

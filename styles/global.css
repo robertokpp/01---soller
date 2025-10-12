@@ -8,12 +8,15 @@
   /* CORES */
   --blueGray900: #0f172a;
   --amber300: #fcd34d;
+  --amber600: #D97706;
   --amber900: #78350f;
 
   /* FONTES */
   --font-family: "Roboto", sans-serif;
 
   --h1: 800 4.5rem/1.1 var(--font-family);
+  --h2: 800 2.625rem/1.1 var(--font-family);
+  --span-tittle: 800 1.25rem var(--font-family);
   --body: 500 1.125rem/1.6 var(--font-family);
   --button: 500 1rem/1.5 var(--font-family);
 }

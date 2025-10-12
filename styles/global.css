@@ -24,13 +24,20 @@
 body {
   font-family: var(--font-family);
   overflow-x: hidden;
+  & h1,
+  a,
+  p {
+    color: var(--blueGray900);
+  }
   & h1 {
     font: var(--h1);
-    color: var(--blueGray900);
   }
   & p {
     font: var(--body);
-    color: var(--blueGray900);
+  }
+  & a {
+    text-decoration: none;
+    font: var(--body);
   }
 }
 
@@ -41,7 +48,6 @@ body {
     }
     & p {
       font: var(--body);
-     
     }
   }
 }

@@ -8,6 +8,11 @@
   display: none;
 }
 
+@media (width > 80rem) {
+ .container {
+   zoom: 125%;
+  }
+}
 @media (width < 52.5rem) {
   .container {
     padding-inline: 1rem;
@@ -40,6 +45,14 @@
 .fd-col{
   flex-direction: column;
 }
+.fd-row{
+  flex-direction: row;
+}
+
+.gap-3{
+  gap: 3rem;
+}
+
 
 
 .jc-center{

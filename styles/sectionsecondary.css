@@ -90,8 +90,3 @@
   }
 }
 
-@media (width > 80rem) {
-  #section-secondary {
-    zoom: 125%;
-  }
-}

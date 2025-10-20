@@ -72,11 +72,7 @@
   }
 }
 
-@media (width > 80rem) {
-  #section-primary {
-    zoom: 125%;
-  }
-}
+
 
 @media (width < 62.5rem) {
   #section-primary {

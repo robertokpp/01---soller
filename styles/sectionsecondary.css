@@ -8,28 +8,33 @@
     margin-bottom: 5rem;
   }
 
+  & img{
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
   & .ellipse {
-    & > :nth-child(1) {
+    & .ellipse-yellow{
       position: absolute;
-      left: -20%;
-      bottom: 25%;
+      left: -28%;
+      top: 13%;
       z-index: -1;
     }
 
-    & > :nth-child(2) {
+    & .ellipse-purple {
       position: absolute;
-      right: -10%;
-      bottom: 25%;
+      right: -15%;
+      bottom: 20%;
       z-index: -2;
     }
 
-    & > :nth-child(3) {
+    & .ellipse-yellow-small {
       position: absolute;
       right: 10%;
       bottom: 25%;
       z-index: 1;
     }
-    & > :nth-child(4) {
+    & .ellipse-purple-small {
       position: absolute;
       left: 10%;
       bottom: 25%;
@@ -37,6 +42,9 @@
     }
   }
 }
+
+
+
 
 @media (width < 1000px) {
   #section-secondary {

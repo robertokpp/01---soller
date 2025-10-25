@@ -1,19 +1,21 @@
-#section-tertiary {
+#section-accent {
+  flex-direction: row-reverse;
   gap: 10rem;
   margin-top: 10rem;
   & > :nth-child(1) {
     position: relative;
     & > :nth-child(2) {
       position: absolute;
-      left: -120%;
+      right: -120%;
       top: -10%;
       z-index: -1;
     }
   }
+
 }
 
 @media (width < 1000px) {
-  #section-tertiary {
+  #section-accent {
     flex-direction: column-reverse;
     & > :nth-child(1) {
       & img {

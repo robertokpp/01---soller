@@ -1,13 +1,13 @@
 #section-primary {
-  padding-bottom: 5rem;
+  padding-bottom: 20rem;
   position: relative;
+  
   & header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding-block: 1.5rem;
     padding-inline: 5rem;
-
     position: absolute;
     left: 0;
     top: 0;
@@ -52,11 +52,6 @@
     & > :nth-child(2) {
       & p {
         margin-block: 1rem;
-      }
-      & > div {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
       }
     }
   }

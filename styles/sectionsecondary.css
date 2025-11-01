@@ -8,16 +8,19 @@
     margin-bottom: 5rem;
   }
 
-  & img{
-    width: 100%;
-    padding-inline: 1rem;
+  & .ss-img {
+    display: flex;
+    justify-content: center;
+    & img{
+      width: 83%;
+    }
   }
 
   & .ellipse {
-    & .ellipse-yellow{
+    & .ellipse-yellow {
       position: absolute;
-      left: -28%;
-      top: 13%;
+      left: -15%;
+      top: 16%;
       z-index: -1;
     }
 
@@ -42,9 +45,6 @@
     }
   }
 }
-
-
-
 
 @media (width < 1000px) {
   #section-secondary {
@@ -97,4 +97,3 @@
     }
   }
 }
-

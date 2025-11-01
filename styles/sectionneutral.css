@@ -1,0 +1,36 @@
+#section-neutral {
+  background-color: var(--purple900);
+  padding-block: 5rem;
+  & .header-tittle {
+    display: flex;
+    justify-content: space-between;
+    & span {
+      color: var(--amber300);
+    }
+    & h2 {
+      margin-block: 0.5rem 1.5rem;
+    }
+    & h2,
+    p {
+      color: white;
+    }
+    & button {
+      margin-block: auto;
+    }
+  }
+
+  & .sn-boxs {
+    margin-block: 5rem;
+    display: flex;
+    gap: 1.5rem;
+    & .sn-box {
+      background-color: white;
+      max-width: 364px;
+      padding: 2rem;
+      border-radius: 10px;
+      & p {
+        margin-block: 1rem;
+      }
+    }
+  }
+}

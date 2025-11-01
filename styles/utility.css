@@ -17,7 +17,6 @@
   .container {
     width: 100%;
     overflow: hidden;
-    zoom: 125%;
   }
 }
 
@@ -25,8 +24,13 @@
   .container {
     width: 120em;
     overflow: hidden;
-    zoom: 125%;
   }
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .display-mobile {

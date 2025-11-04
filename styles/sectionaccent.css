@@ -1,7 +1,6 @@
 #section-accent {
   flex-direction: row-reverse;
   gap: 10rem;
-  margin-top: 10rem;
   & > :nth-child(1) {
     position: relative;
     & > :nth-child(2) {

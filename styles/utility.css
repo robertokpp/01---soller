@@ -111,14 +111,13 @@
     margin-block: 1rem;
   }
 }
-
-@media (width < 100px) {
-  & span {
-    font: var(--span-tittle);
-    color: var(--amber600);
-  }
-  & h2 {
-    font: var(--h2);
-    color: var(--blueGray900);
-  }
+& section{
+  padding-block: 5rem;
 }
+
+@media (width < 1000px) {
+  & section{
+  padding-block: 1.5rem;
+}
+}
+

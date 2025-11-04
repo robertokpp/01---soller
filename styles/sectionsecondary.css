@@ -1,5 +1,4 @@
 #section-secondary {
-  padding-block: 5rem;
   position: relative;
   & .header-tittle {
     text-align: center;
@@ -11,7 +10,7 @@
   & .ss-img {
     display: flex;
     justify-content: center;
-    & img{
+    & img {
       width: 83%;
     }
   }

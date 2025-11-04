@@ -1,6 +1,6 @@
 #section-neutral {
   background-color: var(--purple900);
-  padding-block: 5rem;
+  
   & .header-tittle {
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,29 @@
       border-radius: 10px;
       & p {
         margin-block: 1rem;
+      }
+    }
+  }
+}
+
+@media (width < 1000px) {
+  #section-neutral {
+    & .header-tittle {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+      & button {
+        width: 60%;
+      }
+    }
+
+    & .sn-boxs {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      & .sn-box {
+        max-width: 100%;
       }
     }
   }

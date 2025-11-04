@@ -1,0 +1,33 @@
+#section-dark {
+  align-items: center;
+  & .sd-left{
+    width: 50%;
+  }
+  & .header-tittle {
+    width: 50%;
+    & p {
+      margin-block: 1.5rem;
+    }
+    & a {
+      display: flex;
+      gap: 1rem;
+      color: var(--amber900);
+    }
+  }
+}
+
+@media (width < 1000px) {
+  #section-dark {
+  flex-direction: column;
+  gap: 1.5rem;
+  & .sd-left{
+    width: 100%;
+    &  img{
+      width: 100%;
+    }
+  }
+  & .header-tittle {
+    width: 100%;
+  }
+}
+}

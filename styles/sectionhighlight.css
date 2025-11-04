@@ -1,0 +1,37 @@
+#section-highlight {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--purple900);
+  & .header-tittle {
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+    & h2 {
+      color: white;
+      margin-block: 1.5rem;
+    }
+  }
+}
+
+@media (width < 1000px) {
+  #section-highlight {
+    & .header-tittle {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      & > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+    & .sh-img {
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
